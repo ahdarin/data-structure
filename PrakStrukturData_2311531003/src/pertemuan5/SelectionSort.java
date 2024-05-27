@@ -21,12 +21,12 @@ public class SelectionSort {
 		int n= arr.length;
 		System.out.printf("array yang belum terurut:\n");
 		for(int i=0; i<n; i++)
-			System.out.println(arr[i] + " ");
+			System.out.print(arr[i] + " ");
 		System.out.println();
 		SelectionSort(arr);
 		System.out.printf("array yang terurut:\n");
 		for(int i=0; i<n; i++)
-			System.out.println(arr[i] + " ");
+			System.out.print(arr[i] + " ");
 		System.out.println();
 
 	}
