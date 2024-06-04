@@ -14,7 +14,7 @@ public class BinaryTree {
 	}
 	
 	private boolean search(Node node, int data) {
-		if(node.getData()==data)
+		if(node.getData()== data)
 			return true;
 		if (node.getLeft()!=null)
 			if(search(node.getLeft(),data))
@@ -70,6 +70,6 @@ public class BinaryTree {
 	}
 	
 	public void setRoot(Node node) {
-		this.root = root;
+		this.root = node;
 	}
 }

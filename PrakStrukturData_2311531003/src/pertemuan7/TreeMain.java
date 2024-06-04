@@ -12,7 +12,7 @@ public class TreeMain {
 		Node root = new Node(1);
 		//menjadikan simpul 1 sebagai root
 		tree.setRoot(root);
-		System.out.println("Jumlah simpul jika hanya ada root : ");
+		System.out.print("Jumlah simpul jika hanya ada root : ");
 		System.out.println(tree.countNodes());
 		
 		Node node2 = new Node(2);
@@ -31,15 +31,15 @@ public class TreeMain {
 		
 		//set root
 		tree.setCurrent(tree.getRoot());
-		System.out.println("menampilkan simpul terakhir : ");
+		System.out.print("menampilkan simpul terakhir : ");
 		System.out.println(tree.getCurrent().getData());
-		System.out.println("Jumlah simpul setelah simpul 7 ditambahkan");
+		System.out.print("Jumlah simpul setelah simpul 7 ditambahkan");
 		System.out.println(tree.countNodes());
-		System.out.println("InOrder : ");
+		System.out.print("InOrder : ");
 		tree.printInorder();
-		System.out.println("\nPreOrder : ");
+		System.out.print("\nPreOrder : ");
 		tree.printPreorder();
-		System.out.println("\nPostOrder : ");
+		System.out.print("\nPostOrder : ");
 		tree.printPostorder();
 		System.out.println("\nMenampilkan simpul dalam bentuk pohon");
 		tree.print();
