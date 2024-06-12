@@ -6,13 +6,25 @@ import java.util.List;
 public class MainGraph {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		List<Edge> edges = Arrays.asList(new Edge(0, 1, 2),new Edge(0, 2, 4),
 				new Edge(0, 4, 6),new Edge(1, 0, 4),new Edge(1, 3, 8), 
 				new Edge(1, 2, 3),new Edge(2, 0, 5),new Edge(2, 1, 4),
 				new Edge(3, 2, 5),new Edge(4, 5, 2),new Edge(5, 3, 4),
 				new Edge(5, 2, 2),new Edge(2, 5, 3));
-		
+/*
+        [ 0 ]
+      ^/  ^| ^\
+     //   ||  \\
+    //    ||   \\
+   //     ||    \\
+  /v      |v     \v
+[ 1 ]<==>[ 2 ]   [ 4 ]
+ |       ^  ^\     |
+ |      /    \\    |
+ |     /      \\   |
+ v    /        \v  v
+  [ 3 ]<--------[ 5 ]
+*/
 		// call graph class Constructor to construct a graph
 		Graph graph = new Graph(edges);
 
